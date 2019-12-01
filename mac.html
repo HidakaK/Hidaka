@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Macintosh</title>
 </head>
-<body bgcolor="black">
+<body background="picture/bg.jpg">
     <center>
         <img src="picture/1017_06.gif">
         </center>
@@ -38,17 +38,74 @@
         <a href="http://www.emaculation.com/System70_boot.zip">systemのイメージ(直リンク)</a>
         <br>
         MacintoshのROMイメージ<br>
-        ググればどうにかなる(ヤフオクとかで68kマックを落札し、ROMを吸い出すソフトで抽出してください。)
+        eBayとかヤフオクで80年代後半~90年代前半の68k Macintoshを入手し、吸い出す。PowerMacintoshはダメ
+        ググれば入手できる。
 <br>
 それ以外は下記のURLのフォーラムからダウンロード
+<a href="https://www.emaculation.com/forum/viewtopic.php?t=5282">BasiliskII for Windows • E-Maculation Forum</a>
+<br>注　Windows 10 1903では同じ設定でも再起動時に画面が真っ白になるなど動作が安定しませんでした。8.1では安定して動作したので、多分7とかで大丈夫だと思います。
 <br>
 <font size="7">インストールまでの手順</font>
 <br>
 HFV Explorerを起動してメニューバー左上の""Format New Volume"を洗濯<br>
+<img src="picture/s-hfv.jpg">
 ダイアログ内の空白のボックスに上からボリューム名、容量、保存先のパスを指定
+<img src="picture/hfv0.jpg">
 <br>
-左ベインから漢字Talkが保存してあるディレクトリに移動し、
+左ベインから漢字Talkが保存してあるディレクトリに移動し、ファイルをツールバーからコピーする。そして先ほど作成したボリュームに移動し、ペーストする。<br>
+
+<img src="picture/hfv1.bmp">
+
+<br>
+BasiliskGUI.exeを起動し、Generalタブに移動する。そして設定を以下のように設定する。(注　system7.0を起動させるときはなるべく古いマッキントッシュで行うように)
+<br>screenタブで任意の設定を行う。Diskタブで解凍したsystem7のディスク、漢字Talkのディスクのパスを指定(ちなみにbasilisk2と同ディレクトリにディスクのファイルを置くと、ソフトに絶対パスが表示されない)
+<img src="picture/first.jpg">
+<br>
+起動すると画面にダイアログが表示されるが、そのままクリックするとデスクトップ画面が表示される。(ぱっと見現在のOS Xとあまり変わらん...)<br>
+先ほどHFV Explprerで作成したディスクがマウントされているので、中の漢字Talkのファイルをクリックし、回答させる。<br>
+<img src="picture/kaitou.jpg">
+<br>
+<img src="picture/kanji.jpg">
+<img src="picture/in.jpg">
+あとは画面の指示(フィーリング)に従ってインストールを進める。<br>
+インストールが終わり、つずけるか再起動するか問われる画面が出るので再起動させる。
+再起動時にMac OSのロゴが出て、爆弾もなくデスクトップが表示されたら完了です。
+<hr>
+<br>
+<center>おまけ　Mac OS 8を新規インストール/漢字Talkからインストール</center>
+Mac OS 8を新規インストール
+<br>
+basilisk2を終了させて、
+ファイルBasiliskⅡ_prefsをメモ帳などで開き、3行目のCDのパスをisoの絶対パスに書き換える。
+<img src="picture/cd.jpg">
+<br>
+ファイルを上書き保存し、再度basilisk2を開く。機種やromを以下のようにし、generalタブからboot driverをcdにする
+<img src="picture/qua.jpg">
+後はOSを起動させ、CD内のユーティリティでディスクをフォーマットし、インストールする。
+<br>
+(画像では漢字   Talk上からインストールを行なっているが、CDから起動させると、背景はcDがずらっと並んだ画像になる。 )
+<img src="picture/os8.jpg">
+<br>
+<img src="picture/inst.jpg">
+
+<br>
+<br>
+参考サイト
+<br>
+<a href="http://kiliwave.hatenablog.com/entry/2014/09/23/172917">Windows 8.1で68k Macを動かす</a>
+<a href="https://www.sinfonia.or.jp/~ti5/contents/?p=80">Windowsで古いMacOSを動かす – KANI'S HOMEPAGE</a>
+<a href="http://www.nextftp.com/huin/potatips/Basilisk2_costom.htm">Basilisk2 Costomize</a>
     </font>
+
+
+
+    <hr>
+    vmwareでmac os x
+    <hr>
+    pearpcでos x
+    <hr>
+    qemuでos9
+    
        <br> <img src="picture/madeonamac.gif">
     </div>
 </body>
