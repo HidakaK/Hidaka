@@ -10,20 +10,69 @@
     <div aligin='center'>
         ここはMicrosoft全盛期(多分2000年代初頭?)のWindows関連のメモです<hr>
         <br>
-        Dynabook L20でWindows 2000をインストール?<br>
+        Dynabook L20でWindows 2000をインストール<br>
 
-        そもそも動くの? ... このサイトを参考<a href></a>
+        そもそも動くの? ... はい
 <br>
-CDからWIndows 2000 をインストール <br>（あらかじめSP4を適用すると、インストール後の再起動が格段に早くなります。）<br>
+手順
+<ul>
+
+CDからWIndows 2000 をインストール
+</ul>
+<center>
+ nlite等でService Pack 4をあらかじめ適用する(無印だと起動にかなり時間がかかるため)
+</center>
+<ul>
+    ドライバのインストール
+</ul>
+LAN,サウンド、ビデオドライバをインストール
+<br>
+LANドライバ
+<br>
+dynabook ダウンロードページから型番を検索しrealtek gigabit ethernet family xp用ドライバの自己解凍式プログラムをダウンロードし、
+7-zipなどで解凍する、その中に2k用ドライバがあるのでそれをデバイスマネージャからインストール
+<br>
+オーディオ
+<br>
+kb888111を黒翼猫のコンピュータ日記 2nd Edition - Windows 2000 BlogからリンクしてあるWindows Legacy Updateというサイトからダウンロード 
+<br>
+これを適用すると、再起動時にプラグアンドプレイでIntel HD Audioが自動的に認識される。
+<br>
+豆　kb888111無しでオーディオを認識できない原因 https://www.tekwind.co.jp/ASU/faq/entry_28.php
+<br>
+ビデオドライバ
+<br>
+http://blog.livedoor.jp/blackwingcat/archives/1143494.html<br>
+このサイトからリンクされているインテルのサイトからzipをダウンロードしてsetup.exeを実行する
+<br>
+Windows Update 
+<br>
+Windows Updateは2000以降のWindowsでできる模様<br>
+IE6,SP4 SRP v2,ルート証明書の更新の順でインストールする。　IE6以外はWindows legucy Updateというサイトからダウンロード
+<br>
+ソフトウェア
+FFFTP 1.98g
+
+
 
 VmwareでMS-DOS 6.2 or IBM PC-DOS 7.0/Jをインストールする
 <br>
-<font size="4">最初は画面の指示に従ってインストールを進めます。</font>
-configやautoexecに変更は加えない (PC-DOSだとWindowsインストール画面に進まない?)
-<br>
 <img src="picture/dos6.2.png"><img src="picture/pc_dos.png">
+<font size="4">最初は画面の指示に従ってインストールを進めます。</font>
+MS-DOSのみインストール後にWindowsで作れるDOS起動ディスクから立ち上げ、cドライブでedit c:¥config.sysと入力する。<br>
+そして内容を以下のように書き換える。
+<br><img src="picture/cf.jpg">
+<br>
+後は3.1のファイルをコピーして、そこからセットアップする。(PC-DOSだとWindowsインストール画面に進まない?)途中でtotixyuudeconfigやautoexecを書き換えるか聞かれるが、
+configやautoexecに変更は加えない。セットアップが終わったら再起動し、windowsのディレクトリに移動し、winと入力する。
+<br>
+<img src="picture/cn.jpg"><br><img src="picture/31.jpg">
+
+<br>
 <hr>
-http://j7p.net/backup/howto_doscdrom.html
+参考サイト
+<a href="
+http://j7p.net/backup/howto_doscdrom.html"></a>
 http://himagine.s20.xrea.com/win31br/win31br.htm
 https://www.ipentec.com/document/hyper-v-install-msdos-62
 https://legacyos.ichmy.0t0.jp/virtualwin31/
@@ -32,6 +81,24 @@ https://legacyos.ichmy.0t0.jp/virtualwin31/
 <font size='7'>
 Windows用ソフトウェア ダウンロードリンク
 </font>
+xp vlをoemへ
+setupp.ini 000をoem
+
+DPCDLL.DL_,PIDGEN.DLL
+をoemcdから抜き出す日本語版cdを作りたいときに英語版のwindowsの2つのファイルをつかってもよい
+
+nliteでiso作成
+
+<hr>
+<ul>
+    QEMUでWindows NT 4.0
+</ul>
+<br><br><br>
+参考サイト
+<br>
+<a href="http://computernewb.com/wiki/How_to_install_Windows_NT_on_MIPS_in_QEMU">QEMUのMIPSにWindows NTをインストールする方法-Computernewb Wiki</a>
+<br>
+
 
 
     </div>

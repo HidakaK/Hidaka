@@ -14,6 +14,12 @@
         <div align="center">
             <font size="7" color="white">Macintosh(68k,PowerPC)エミュレータ</font>
        <br>
+       <script type="text/javascript">
+        var imglist = new Array("immac.gif", "picture/1400spin.gif");
+        var selectnum = Math.floor(Math.random() * imglist.length);
+        var output = "<center><img src=" + imglist[selectnum] + "></center>";
+        document.write(output);
+    </script>
        <font color="white">
        インテルマック以降のマックで古いネスケを動かそうとして、PowerPCアプリケーションはサポートされていませんと出てがっかりした事はありませんか?
         <br>
@@ -48,7 +54,7 @@
 <font size="7">インストールまでの手順</font>
 <br>
 HFV Explorerを起動してメニューバー左上の""Format New Volume"を洗濯<br>
-<img src="picture/s-hfv.jpg">
+<img src="picture/s-hfv.jpg" width="60%">
 ダイアログ内の空白のボックスに上からボリューム名、容量、保存先のパスを指定
 <img src="picture/hfv0.jpg">
 <br>
@@ -62,7 +68,10 @@ BasiliskGUI.exeを起動し、Generalタブに移動する。そして設定を�
 <img src="picture/first.jpg">
 <br>
 起動すると画面にダイアログが表示されるが、そのままクリックするとデスクトップ画面が表示される。(ぱっと見現在のOS Xとあまり変わらん...)<br>
-先ほどHFV Explprerで作成したディスクがマウントされているので、中の漢字Talkのファイルをクリックし、回答させる。<br>
+先ほどHFV Explprerで作成したディスクがマウントされているので、中の漢字Talkのファイルをクリックし、解凍させる。<br>
+<img src="picture/talk7.jpg" width="50%",height="50%">
+<br>
+
 <img src="picture/kaitou.jpg">
 <br>
 <img src="picture/kanji.jpg">
@@ -103,10 +112,19 @@ basilisk2を終了させて、
     vmwareでmac os x
     <hr>
     pearpcでos x
+    pearpcをダウンロードする。ppc.configの例
+    <br>
+    <a href="media/ppc.config">設定ファイル</a>
+    <br>
+    <center>インストール後の画面 </center>
+    <br>
+    <img src="picture/S_osx_10.1.2.jpg"width="30%",height="40%">
     <hr>
     qemuでos9
+    <br>
     
-       <br> <img src="picture/madeonamac.gif">
+    
+       <br> <img src="picture/madeonamac.gif" >
     </div>
 </body>
 </html>

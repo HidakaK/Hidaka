@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Windows活用部屋</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="Untitled-3.js"></script>
 <link rel="stylesheet" type="text/css" href="Untitled-2.css">
@@ -14,7 +14,7 @@
     Windows活用部屋
     </p>
     <ul class="nav">
-        <li><a href="index2.html">Edge以外のユーザー</a>
+        <li><a href="index2.html">CSS3非対応ブラウザ用のトップ</a>
             <ul>
                 
             </ul>
@@ -60,15 +60,23 @@
                     Welcome!!
         </p>
                 </span>
-
-                <a href="">概要</a>
+                <!--ランダムに画像変化-->
+                <script type="text/javascript">
+                    var imglist = new Array("immac.gif", "extra.jpg", "cn.jpg","osx.jpg","31.jpg","osie.jpg","kan.jpg","doma.png","S_osx_10.68.jpg","picture/s_os91.jpg","picture/s_os92.jpg","s_x101.jpg");
+                    var selectnum = Math.floor(Math.random() * imglist.length);
+                    var output = "<center><img src=" + imglist[selectnum] + "></center>";
+                    document.write(output);
+                </script>
             <p id="since">
                     since '19 5/15 last update '19 12/1
                 </p>
                 <p id="since">
-                    このサイトはChromium版Edgeでのみ動作を確認しています。Safari,Nerscape Navigator,FireFox,Chromeをお使いの方は左上のトップからお入りください。
+                    このサイトはChromium版Edgeで動作を確認しています。
                     <br>
-                    Chromeでも動くようにするかもしれません
+                    <CENTER><script language="JavaScript"><!--
+                        document.write("あなたのWebブラウザは<br>　" .fontcolor("white")+ navigator.userAgent.fontcolor("white") + "<br>です。<br>".fontcolor("white"));
+                        // --></script></CENTER>
+                        
                 </p>
 
 </body>
