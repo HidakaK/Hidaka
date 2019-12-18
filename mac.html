@@ -28,7 +28,6 @@
         OS Xはただでさえ動かせるソフト少ないのに最新のバージョンは32bitが動かない!!(自分で自分の首を占めていると思うのは自分だけ?)
         そんな時はエミュレータで動かしてみよう！！
         <br>
-        <big><big>で、</big></big>現在使用しているエミュレートソフトと動かし方は下で解説
         <hr>
         <font size="7">Basilisk2</font>
         <br>
@@ -75,6 +74,7 @@ BasiliskGUI.exeを起動し、Generalタブに移動する。そして設定を�
 <img src="picture/kaitou.jpg">
 <br>
 <img src="picture/kanji.jpg">
+<br>
 <img src="picture/in.jpg">
 あとは画面の指示(フィーリング)に従ってインストールを進める。<br>
 インストールが終わり、つずけるか再起動するか問われる画面が出るので再起動させる。
@@ -110,17 +110,34 @@ basilisk2を終了させて、
 
 
     <hr>
-    vmwareでmac os x
-    <hr>
     pearpcでos x
-    pearpcをダウンロードする。ppc.configの例
+    pearpcをダウンロードする。
+    <li>ダウンロード先</li>
+    <a href="https://www.emaculation.com/forum/viewforum.php?f=25&sid=7edce30a51dee5be8f46c6dcd836ce83">PearPC • E-Maculation Forum</a>
+ppc.exeがあるディレクトリ内の.kconfigファイルを編集し、コマンドプロンプトでそのディレクトリに移動し、ppc.exe ppc.configと入力すると起動する。
+<br>
+
+    configの例
     <br>
     <a href="media/ppc.config">設定ファイル</a>
     <br>
     <center>インストール後の画面 </center>
     <br>
     <img src="picture/S_osx_10.1.2.jpg"width="30%",height="40%">
-    <hr>
+
+    <br>
+    参考サイト
+    <br>
+<a href="https://www.emaculation.com/doku.php/pearpc_setup">Setting up PearPC for Windows [E-Maculation wiki]</a>
+<br>
+<a href="http://pearpc.sourceforge.net/config.html">PearPC-はじめに</a>
+<br>
+<a href="https://ameblo.jp/storager-fan/entry-12181317030.html">PearPCについて | 貯え　小道具　興味ない？</a>
+<br>
+<a href="http://www.asahi-net.or.jp/~KJ5K-OJM/tech/pearpc/install/ppccfg.html">www.asahi-net.or.jp/~KJ5K-OJM/tech/pearpc/install/ppccfg.html</a>
+  <br>
+  <a href="http://web.archive.org/web/20170320191621/http://www006.upp.so-net.ne.jp/hitoshi_rx7fd/pearpc/install.htm">PearPCとMac OS Xのインストール方法 - PearPC, JAPAN</a>
+<hr>
     qemuでos9
     <a href="https://www.emaculation.com/forum/viewtopic.php?f=34&t=8848&p=52102#p52102">qemuダウンロード先(OSX)</a>
 <br>
@@ -135,6 +152,23 @@ DOSプロンプトでqemuが展開されたディレクトリに移動し、　.
 、実行sる。　size=で容量を指定し、その後ろでファイル名を指定する。
 
     <br>
+qemuがあるディレクトリ内の.commandファイルを開き、以下のようにする。
+<br>
+<pre>
+<small>
+
+./qemu-system-ppc -L pc-bios -boot d -M mac99,via=pmu -m 512 \
+-prom-env 'auto-boot?=true' -prom-env 'boot-args=-v' -prom-env 'vga-ndrv?=true' \
+-drive file=MacOS9.2.iso,format=raw,media=cdrom \
+-drive file=MacOS9.2.img,format=raw,media=disk \
+-netdev user,id=network01 -device sungem,netdev=network01 \
+-device VGA,edid=on \
+</small>
+</pre>
+
+<br>インストール後、hddから起動させるには、
+-boot dをcに変更
+ cdrom,diskの順番をdisk,cdromに変更　以降この状態で起動させる
 
 
     <li>
