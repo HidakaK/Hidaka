@@ -1,0 +1,33 @@
+nt4
+Windows NT 4.0 Updates
+http://www-pc.uni-regensburg.de/systemsw/nt40/nt4sp.htm
+そうなんだ Windows NT
+https://itnavi.com/naruNT/#28
+Windows NT4 Updates List - Windows 2000/2003/NT4 - MSFN
+https://msfn.org/board/topic/103804-windows-nt4-updates-list/
+Windows NTが好き! SP1~SP7
+http://teamcroud.fc2web.com/winnt4.htm
+2k
+うち以外の非公式 Windows 2000 Update サイト - Windows 2000 Blog
+http://blog.livedoor.jp/blackwingcat/archives/1849112.html
+Windows 2000で使える最後のバージョンのIntel 4 Series Driver - Windows 2000 Blog
+http://blog.livedoor.jp/blackwingcat/archives/1033832.html
+Intel HD Graphic Driver for Windows 2000を作ってみた【BM】 - Windows 2000 Blog
+http://blog.livedoor.jp/blackwingcat/archives/1165914.html
+Intel HD Audio Driver を Windows 2000に入れてみよう - Windows 2000 Blog
+http://blog.livedoor.jp/blackwingcat/archives/1143494.html
+今からWindows 2000をセットアップするなら(2018年度版) [最終更新12 12] - Windows 2000 Blog
+http://blog.livedoor.jp/blackwingcat/archives/1959184.html
+Windows 2000でXPタン起動してみた - Windows 2000 Blog
+http://blog.livedoor.jp/blackwingcat/archives/1887143.html
+Windows2000 SP4適用+hotfix統合の完全自動インストールCDを作ろう
+http://www.neko.ne.jp/~freewing/software/windows2k/
+Windows2000で使えるソフト最終バージョンまとめ
+http://win2kuse.wiki.fc2.com/
+
+vmware
+遥佐保の技術メモ:[Hyper-V]VMWare:VMDKをHyper-V:VHDに変換する最強ツールはXenConverterでした - livedoor Blog（ブログ）
+http://blog.livedoor.jp/haruka_sao/archives/52067078.html
+xp
+Windows XP のこれから
+https://web.archive.org/web/20090629204228/http://www.microsoft.com/japan/windows/products/windowsxp/future.mspx

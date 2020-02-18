@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Macintosh</title>
 </head>
-<body background="picture/bg.jpg">
+<body background="picture/bg.jpg" vlink="yellow" link="orange">
     <center>
         <img src="picture/1017_06.gif">
         </center>
@@ -20,179 +20,384 @@
         var output = "<center><img src=" + imglist[selectnum] + "></center>";
         document.write(output);
     </script>
-       <font color="white">
-       インテルマック以降のマックで古いネスケを動かそうとして、PowerPCアプリケーションはサポートされていませんと出てがっかりした事はありませんか?
+    <center>
+        <table border="1">
+            <tbody>
+                <tr>
+                  <td bgcolor="aqua">・<a name="intro">はじめに</a></td> 
+                </tr>
+                <tr>
+                    <td>
+                        インテルマック以降のマックで古いネスケを動かそうとして、<br>
+                        PowerPCアプリケーションはサポートされていませんと出てがっかりした事はありませんか?
+                        <br>
+                        マックに誕生日を祝われたい?
+                        <br>
+                        OS Xはただでさえ動かせるソフト少ないのに最新のバージョンは32bitが動かない!!
+                        <br>
+                        (自分で自分の首を占めていると思うのは自分だけ?)
+                        <br>
+                        そんな時はエミュレータで動かしてみよう！！
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    <p align ="center">
         <br>
-        マックに誕生日を祝われたい?
-        <br>
-        OS Xはただでさえ動かせるソフト少ないのに最新のバージョンは32bitが動かない!!(自分で自分の首を占めていると思うのは自分だけ?)
-        そんな時はエミュレータで動かしてみよう！！
-        <br>
-        <hr>
-        <font size="7">Basilisk2</font>
-        <br>
-        1.(System 7.0から漢字Talkをインストール)<br>
-        OSのインストールディスクイメージ 
-        漢字Talk 7.5.3 のイメージ
-        <a href="http://macintoshgarden.org/apps/kanjitalk753">Macintosh Garden</a>
-        <br>
-        ※昔appleのftpから入手できたが現在はリンク切れ　インターネットアーカイブにも残っていません
-        <br>
-        予めSystem 7.0がインストール済みのイメージ
-        <br>
-        <a href="http://www.emaculation.com/System70_boot.zip">systemのイメージ(直リンク)</a>
-        <br>
-        MacintoshのROMイメージ<br>
-        eBayとかヤフオクで80年代後半~90年代前半の68k Macintoshを入手し、吸い出す。PowerMacintoshはダメ
-        ググれば入手できる。
-<br>
-それ以外は下記のURLのフォーラムからダウンロード
-<a href="https://www.emaculation.com/forum/viewtopic.php?t=5282">BasiliskII for Windows • E-Maculation Forum</a>
-<br>注　Windows 10 1903では同じ設定でも再起動時に画面が真っ白になるなど動作が安定しませんでした。8.1では安定して動作したので、多分7とかで大丈夫だと思います。
-<br>
-<font size="7">インストールまでの手順</font>
-<br>
-HFV Explorerを起動してメニューバー左上の""Format New Volume"を洗濯<br>
-<img src="picture/s-hfv.jpg" width="60%">
-ダイアログ内の空白のボックスに上からボリューム名、容量、保存先のパスを指定
-<img src="picture/hfv0.jpg">
-<br>
-左ベインから漢字Talkが保存してあるディレクトリに移動し、ファイルをツールバーからコピーする。そして先ほど作成したボリュームに移動し、ペーストする。<br>
 
-<img src="picture/hfv1.bmp">
+    </p>
+    <center>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td bgcolor="aqua" colspan="3">・<a name="soft">項目</a></td>
+                
+                </tr>
+
+                <tr>
+<td align="ceenter"><a href="#intro">はじめに</a></td>
+                </tr>
+                <tr><td bgcolor="aqua">ソフト一覧</td></tr>
+                <tr>
+
+               
+<td align="center"><a href="#bas">Basilisk2</a></td>
+<td align="center"><a href="#qemu">QEMU</a></td>
+<td align="center"><a href="#ppc">PearPC</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td bgcolor="aqua"><a href="#saito">参考サイト</a></td>
+                </tr>
+                <tr><td></td></tr>
+            </tbody>
+        </table>
+        <table border="1">
+            <tbody>
+                <tr><td align="center" bgcolor="red"><a name="saito">Basilisk2</a></td></tr>
+                <tr><td><a href="http://kiliwave.hatenablog.com/entry/2014/09/23/172917">Windows 8.1で68k Macを動かす</a></td></tr>
+                <tr><td><a href="https://www.sinfonia.or.jp/~ti5/contents/?p=80">Windowsで古いMacOSを動かす - KANI'S HOMEPAGE</a></td></tr>
+                <tr><td><a href="http://www.nextftp.com/huin/potatips/Basilisk2_costom.htm">Basilisk2_Costomize</a></td></tr>
+
+
+
+                <tr><td align="center" bgcolor="red">QEMU</td></tr>
+                <tr><td><a href="https://www.emaculation.com/doku.php/pearpc_setup">Setting up PearPC for Windows [E-Maculation wiki]</a></td></tr>
+                <tr><td><a href="https://www.emaculation.com/doku.php/ppc-osx-on-qemu-for-osx">Qemu PPC for OSX [E-Maculation wiki</a>
+                    <br>
+                    <a href="https://wiki.qemu.org/Documentation/Platforms/PowerPC">ドキュメント/プラットフォーム/ PowerPC-QEMU</a>
+                    <br>
+                    <a href="https://wiki.qemu.org/Documentation/Platforms/PowerPC#Mac_OS_9.x_to_Mac_OS_X_10.4">Documentation/Platforms/PowerPC - QEMU</a>
+                    
+                    <br>
+                    <a href="https://www.jamesbadger.ca/2018/11/07/emulate-mac-os-9-with-qemu/">QEMUでMac OS 9をエミュレートする| ジェームズバジャー</a>
+                    <br>
+                    <a href="http://takeda-toshiya.my.coocan.jp/qemu/index.html">QEMU for Windows</a>
+                    <br>
+                    <a href="https://drive.google.com/drive/folders/1GyMpfYqq3sex6Bxe-nbgLVzW_cm2_7wU">Mac OS X 10.0 (QEMU EMULATION) - Google ドライブ</a>
+                    <br>
+                    <a href="https://legacyos.ichmy.0t0.jp/qemu/">Qemuで遊ぼうのこーなー</a>
+                    <br>
+                    <a href="http://tk.cocolog-nifty.com/tk/2019/02/win10macos9-wit.html">Win10でMacOS9 (with QEMU): 河村日記？</a>
+                    <br>
+                    <a href="https://drive.google.com/drive/folders/1GyMpfYqq3sex6Bxe-nbgLVzW_cm2_7wU">Mac OS X 10.0 (QEMU EMULATION) - Google ドライブ</a>
+                    <br></td></tr>
+                    <tr>
+                        <tr>
+                            <th bgcolor="red">PearPC</th>
+                        </tr>
+                      
+                        <td>
+
+                            <a href="http://pearpc.sourceforge.net/config.html">PearPC-はじめに</a>
+                            <br>
+                            <a href="https://ameblo.jp/storager-fan/entry-12181317030.html">PearPCについて | 貯え　小道具　興味ない？</a>
+                            <br>
+                            <a href="http://www.asahi-net.or.jp/~KJ5K-OJM/tech/pearpc/install/ppccfg.html">www.asahi-net.or.jp/~KJ5K-OJM/tech/pearpc/install/ppccfg.html</a>
+                              <br>
+                              <a href="http://web.archive.org/web/20170320191621/http://www006.upp.so-net.ne.jp/hitoshi_rx7fd/pearpc/install.htm">PearPCとMac OS Xのインストール方法 - PearPC, JAPAN</a>
+                            <hr>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+    </center>
+
+
+
+
+    <table border="1">
+        <tr>
+            <th bgcolor="white"><a name="bas">Basilisk2</a></th>
+        </tr>
+       <tr>
+           <td>
+            1.System 7.0から漢字Talk7.5.3をインストール
+           </td>
+       </tr>
+       <tr>
+           <td>
+               必要なソフト
+           </td>
+       </tr>
+       <tr>
+           <td>
+            <a href="http://www.emaculation.com/System70_boot.zip">system7.0のイメージ(直リンク)</a>
+            <br>
+            <br>
+
+            漢字Talk 7.5.3 のイメージ<br>
+
+            <a href="http://macintoshgarden.org/apps/kanjitalk753">Macintosh Garden</a>
+            <br>
+            <br>
+            MacintoshのROMイメージ<br>
+
+            eBayとかヤフオクで80年代後半~90年代前半の68k Macintoshを入手し、吸い出す。
+            <br>
+            PowerMacintoshはダメ
+            <s>
+                ググれば入手できる。
+            </s>
+            <br>
+<br>
+   Basilisk2本体,HFV Explorer<br>
+   <a href="https://www.emaculation.com/forum/viewtopic.php?t=5282">BasiliskII for Windows • E-Maculation Forum</a>
+   <br>注　Windows 10 1903では同じ設定でも再起動時に画面が真っ白になるなど
+   <br>
+   動作が安定しませんでした。8.1では安定して動作したので、多分7とかで大丈夫だと思います。
+   <br>
+           </td>
+       </tr>
+
+    </table>
+<br>
+<br>
+
+
+    <table border="1">
+        <tbody>
+            <tr><th bgcolor="white">インストール方法</th></tr>
+            <tr>
+                <td>
+<li>
+    HFV Explorerを起動してメニューバー左上の""Format New Volume"を洗濯<br>
+</li>
+    <img src="picture/s-hfv.jpg" width="30%" height="80%">
+<br>
+<li>
+    ダイアログ内の空白のボックスに上からボリューム名、容量、保存先のパスを指定
+</li>
+<br>
+    <img src="picture/hfv0.jpg" width="30%" height="80%">
+<br>
+    左ベインから漢字Talkが保存してあるディレクトリに移動し、ファイルをツールバーからコピーする。
+    <br>
+    そして先ほど作成したボリュームに移動し、ペーストする。
+    <img src="picture/hfv1.bmp" width="130" height="97" border="0">
+<br>
+<li>
+Basilisk2での作業に移ります。
+</li>
+
+BasiliskGUI.exeを起動し、Generalタブに移動する。
+そして設定を以下のように設定する。<br>
+<img src="picture/first.jpg" width="300" height="400" border="0"　align="left">
+<br>
+(注　system7.0を起動させるときはModel IDをMac2fxにするといいです)<br>
+screenタブで任意の設定を行う。Diskタブで解凍したsystem7のディスク、<br>
+hfv explorerで作成した漢字Talkのディスクのパスを指定<br>
+(ちなみにbasilisk2と同ディレクトリにディスクのファイルを置くと、ソフトに絶対パスが表示されない)
+    
+
 
 <br>
-BasiliskGUI.exeを起動し、Generalタブに移動する。そして設定を以下のように設定する。(注　system7.0を起動させるときはなるべく古いマッキントッシュで行うように)
-<br>screenタブで任意の設定を行う。Diskタブで解凍したsystem7のディスク、漢字Talkのディスクのパスを指定(ちなみにbasilisk2と同ディレクトリにディスクのファイルを置くと、ソフトに絶対パスが表示されない)
-<img src="picture/first.jpg">
-<br>
-起動すると画面にダイアログが表示されるが、そのままクリックするとデスクトップ画面が表示される。(ぱっと見現在のOS Xとあまり変わらん...)<br>
-先ほどHFV Explprerで作成したディスクがマウントされているので、中の漢字Talkのファイルをクリックし、解凍させる。<br>
-<img src="picture/talk7.jpg" width="50%",height="50%">
-<br>
+起動すると画面にダイアログが表示されるが、そのままクリックすると<br>
+デスクトップ画面が表示される。(ぱっと見現在のOS Xとあまり変わらん...)<br>
+先ほどHFV Explprerで作成したディスクがマウントされているので、
+<br>中の漢字Talkのファイルをクリックし、解凍させる。<br>
 
-<img src="picture/kaitou.jpg">
+    <img src="picture/talk7.jpg" width="230" height="300" border="0">
+
+
+    <img src="picture/kaitou.jpg" width="230" height="300" border="0">
+
+<img src="picture/kanji.jpg" width="230" height="300" border="0">
+<img src="picture/in.jpg" width="230" height="300" border="0">
+
+
+
 <br>
-<img src="picture/kanji.jpg">
-<br>
-<img src="picture/in.jpg">
 あとは画面の指示(フィーリング)に従ってインストールを進める。<br>
-インストールが終わり、つずけるか再起動するか問われる画面が出るので再起動させる。
+インストールが終わり、つずけるか再起動するか問われる画面が出るので再起動させる。<br>
 再起動時にMac OSのロゴが出て、爆弾もなくデスクトップが表示されたら完了です。
 <hr>
 <br>
+</td>
+</tr>
+</tbody>
+</table>
 <center>おまけ　Mac OS 8を新規インストール/漢字Talkからインストール</center>
-Mac OS 8を新規インストール
-<br>
-basilisk2を終了させて、
-ファイルBasiliskⅡ_prefsをメモ帳などで開き、3行目のCDのパスをisoの絶対パスに書き換える。
-<img src="picture/cd.jpg">
-<br>
-ファイルを上書き保存し、再度basilisk2を開く。機種やromを以下のようにし、generalタブからboot driverをcdにする
-<img src="picture/qua.jpg">
-後はOSを起動させ、CD内のユーティリティでディスクをフォーマットし、インストールする。
-<br>
-(画像では漢字   Talk上からインストールを行なっているが、CDから起動させると、背景はcDがずらっと並んだ画像になる。 )
-<img src="picture/os8.jpg">
-<br>
-<img src="picture/inst.jpg">
-
-<br>
-<br>
-参考サイト
-<br>
-<a href="http://kiliwave.hatenablog.com/entry/2014/09/23/172917">Windows 8.1で68k Macを動かす</a>
-<a href="https://www.sinfonia.or.jp/~ti5/contents/?p=80">Windowsで古いMacOSを動かす – KANI'S HOMEPAGE</a>
-<a href="http://www.nextftp.com/huin/potatips/Basilisk2_costom.htm">Basilisk2 Costomize</a>
-
-    </font>
-
-
-
+<table border="1">
+   <tr><th bgcolor="aqua">Mac OS 8を新規インストール</th></tr> 
+<tr>
+    <td>
+        <img src="picture/cd.jpg" width="230" height="230" border="0" align="left">
+        basilisk2を終了させて、
+        ファイルBasiliskⅡ_prefsをメモ帳などで開き、
+        <br>
+        3行目のCDのパスをisoの絶対パスに書き換える。
+        
+        ファイルを上書き保存し、
+        <br>再度basilisk2を開く。機種やromを
+        <br>以下のようにし、generalタブからboot driverをcdにする
+        <img src="picture/qua.jpg" width="230" height="230" border="0" align="left">
+        <br>
+        あとはディスクユーティリティでフォーマットし、インストールを進める。
+    </td>
+</tr>
+</table>
     <hr>
-    pearpcでos x
-    pearpcをダウンロードする。
-    <li>ダウンロード先</li>
-    <a href="https://www.emaculation.com/forum/viewforum.php?f=25&sid=7edce30a51dee5be8f46c6dcd836ce83">PearPC • E-Maculation Forum</a>
-ppc.exeがあるディレクトリ内の.kconfigファイルを編集し、コマンドプロンプトでそのディレクトリに移動し、ppc.exe ppc.configと入力すると起動する。
-<br>
+    <table border="3">
+        <tr>
+            <th bgcolor="aqua">
+                <a name="ppc">
+                    PearPCでOSX
+                </a></th>
+        </tr>
+        <tr>
+            <td rowspan="3">ダウンロード先</td>
+        </tr>
+        <tr>
+            <td>
 
-    configの例
-    <br>
-    <a href="media/ppc.config">設定ファイル</a>
-    <br>
-    <center>インストール後の画面 </center>
-    <br>
-    <img src="picture/S_osx_10.1.2.jpg"width="30%",height="40%">
+            
+            <a href="https://www.emaculation.com/forum/viewforum.php?f=25&sid=7edce30a51dee5be8f46c6dcd836ce83">PearPC • E-Maculation Forum</a>
+       </td>
+        </tr>
+        <tr>
+            <td rowspan="4" bgcolor="gray">
+                ppc.exeがあるディレクトリ内の.kconfigファイルを編集し、
+                <br>コマンドプロンプトでそのディレクトリに移動
+                <br>ppc.exe ppc.configと入力すると起動する。
+            </td>
+        </tr>
+        <tr>
+            <td>
+                configの例
+            </td>
+          
+        </tr>
+        <tr>
+            <td>
+                <a href="media/ppc.config">設定ファイル</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <center>インストール後の画面 </center><br>
+                <img src="picture/S_osx_10.1.2.jpg"width="250",height="200">
+            </td>
+        </tr>
+    </table>
+  
 
-    <br>
-    参考サイト
-    <br>
-<a href="https://www.emaculation.com/doku.php/pearpc_setup">Setting up PearPC for Windows [E-Maculation wiki]</a>
-<br>
-<a href="http://pearpc.sourceforge.net/config.html">PearPC-はじめに</a>
-<br>
-<a href="https://ameblo.jp/storager-fan/entry-12181317030.html">PearPCについて | 貯え　小道具　興味ない？</a>
-<br>
-<a href="http://www.asahi-net.or.jp/~KJ5K-OJM/tech/pearpc/install/ppccfg.html">www.asahi-net.or.jp/~KJ5K-OJM/tech/pearpc/install/ppccfg.html</a>
-  <br>
-  <a href="http://web.archive.org/web/20170320191621/http://www006.upp.so-net.ne.jp/hitoshi_rx7fd/pearpc/install.htm">PearPCとMac OS Xのインストール方法 - PearPC, JAPAN</a>
-<hr>
-    qemuでos9
-    <a href="https://www.emaculation.com/forum/viewtopic.php?f=34&t=8848&p=52102#p52102">qemuダウンロード先(OSX)</a>
-<br>
-<a href="https://www.emaculation.com/doku.php/ppc-osx-on-qemu-for-windows">Windoes用</a>
+   
 
+
+
+    
+
+    
 <br>
-上で示したフォーラムのページ上部に示されているqemuは音声出力をサポートしていません
-ページを下に下げるとサウンドがサポートされたバージョンがダウンロードできます
-    <br>
+<table border="2">
+    <tbody>
+        <tr>
+            <td bgcolor="aqua">
+                <a name="qemu">
+                    QEMUでOS9
+                </a>
 
-DOSプロンプトでqemuが展開されたディレクトリに移動し、　./qemu-img create -f raw -o size=2G MacOS9.2.img 　と入力
-、実行sる。　size=で容量を指定し、その後ろでファイル名を指定する。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                本体ダウンロード先
+            </td>
+        </tr>
+        <tr>
+            <td> <a href="https://www.emaculation.com/forum/viewtopic.php?f=34&t=8848&p=52102#p52102">qemuダウンロード先(OSX)</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.emaculation.com/doku.php/ppc-osx-on-qemu-for-windows">Windoes用</a></td>
+        </tr>
+    </tbody>
+</table>
+<table border="2">
 
-    <br>
-qemuがあるディレクトリ内の.commandファイルを開き、以下のようにする。
-<br>
-<pre>
-<small>
+<tbody>
 
-./qemu-system-ppc -L pc-bios -boot d -M mac99,via=pmu -m 512 \
--prom-env 'auto-boot?=true' -prom-env 'boot-args=-v' -prom-env 'vga-ndrv?=true' \
--drive file=MacOS9.2.iso,format=raw,media=cdrom \
--drive file=MacOS9.2.img,format=raw,media=disk \
--netdev user,id=network01 -device sungem,netdev=network01 \
--device VGA,edid=on \
-</small>
-</pre>
 
-<br>インストール後、hddから起動させるには、
+        <tr>
+            <td colspan="4">
+                上で示したフォーラムのページ上部に示されているqemuは音声出力をサポートしていません
+
+                <br>
+                ページを下に下げるとサウンドがサポートされたバージョンがダウンロードできます
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="white">インストール方法</td>
+        </tr>
+        <tr>
+            <td>
+                DOSプロンプトでqemuが展開されたディレクトリに移動し、
+                <br>
+                
+                　./qemu-img create -f raw -o size=2G MacOS9.2.img 　と入力<br>
+                　size=で容量を指定し、その後ろでファイル名を指定する。
+            </td>
+        </tr>
+        <tr>
+            <td>
+                qemuがあるディレクトリ内の.commandファイルを開き、以下のようにする。
+            </td>
+        </tr>
+        <tr>
+            <th bgcolor="gray">
+                <pre>
+                   <code>
+                    ./qemu-system-ppc -L pc-bios -boot d -M mac99,via=pmu -m 512 \
+                    -prom-env 'auto-boot?=true' -prom-env 'boot-args=-v' -prom-env 'vga-ndrv?=true' \
+                    -drive file=MacOS9.2.iso,format=raw,media=cdrom \
+                    -drive file=MacOS9.2.img,format=raw,media=disk \
+                    -netdev user,id=network01 -device sungem,netdev=network01 \
+                    -device VGA,edid=on \
+                   </code>
+                    </pre>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                インストール後、hddから起動させるには、
 -boot dをcに変更
  cdrom,diskの順番をdisk,cdromに変更　以降この状態で起動させる
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+   
 
 
-    <li>
-        参考サイト
-    </li>
-<a href="https://www.emaculation.com/doku.php/ppc-osx-on-qemu-for-osx">Qemu PPC for OSX [E-Maculation wiki</a>
 <br>
-<a href="https://wiki.qemu.org/Documentation/Platforms/PowerPC">ドキュメント/プラットフォーム/ PowerPC-QEMU</a>
-<br>
-<a href="https://wiki.qemu.org/Documentation/Platforms/PowerPC#Mac_OS_9.x_to_Mac_OS_X_10.4">Documentation/Platforms/PowerPC - QEMU</a>
 
-<br>
-<a href="https://www.jamesbadger.ca/2018/11/07/emulate-mac-os-9-with-qemu/">QEMUでMac OS 9をエミュレートする| ジェームズバジャー</a>
-<br>
-<a href="http://takeda-toshiya.my.coocan.jp/qemu/index.html">QEMU for Windows</a>
-<br>
-<a href="https://drive.google.com/drive/folders/1GyMpfYqq3sex6Bxe-nbgLVzW_cm2_7wU">Mac OS X 10.0 (QEMU EMULATION) - Google ドライブ</a>
-<br>
-<a href="https://legacyos.ichmy.0t0.jp/qemu/">Qemuで遊ぼうのこーなー</a>
-<br>
-<a href="http://tk.cocolog-nifty.com/tk/2019/02/win10macos9-wit.html">Win10でMacOS9 (with QEMU): 河村日記？</a>
-<br>
-<a href="https://drive.google.com/drive/folders/1GyMpfYqq3sex6Bxe-nbgLVzW_cm2_7wU">Mac OS X 10.0 (QEMU EMULATION) - Google ドライブ</a>
-<br>
+
 
        <br> <img src="picture/madeonamac.gif" >
     </div>
