@@ -112,25 +112,18 @@ DPCDLL.DL_,PIDGEN.DLL
 nliteでiso作成
 <hr>
 シャットダウン時にWindows Updateを行うXP 
-<object 
-    id="xp_shutdown" 
-    width="768" 
-    height="640" 
-    classid="clsid:CFCDAA03-8BE4-11cf-B84B-0020AFBBCCFA">
 
-    <param name="src" value="media/xpwu.rm" /><!-- src属性は絶対・相対パスどちらでもOK -->
-    <param name="console" value="Clip1" />
-    <param name="controls" value="All" />
-    <param name="backgroundcolor" value="black" />
-    <param name="autostart" value="false" />
-    <param name="center" value="true" />
-    <param name="nologo" value="false" />
-
-    <embed 
-        name="xp_shutdown" src="media/xpwu.rm " type="audio/x-pn-realaudio-plugin" pluginspage="http://www.jp.real.com/" console="Clip1" controls="All" backgroundcolor="black" width="768" height="648" autostart="false" center="true" nologo="false" nojava="true"><!-- src属性は絶対・相対パスどちらでもOK -->
+<p align=left>
+    <object id='WMP' classid='CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95' codebase='http://activex.microsoft.com/activex/controls/ mplayer/en/nsmp2inf.cab#Version=5,1,52,701' standby='Loading Microsoft Windows Media Player components…' type='application/x-oleobject' width='480' height='389'>
+    <param name='FileName' value='http://wpi64.s1009.xrea.com/media/xpwu.mpg'>
+    <param name='AutoStart' value='false'>
+    <param name='ShowControls' value='true'>
+    <param name='ShowStatusBar' value='true'>
+    <param name='Loop' value='false'>
+    <embed id='WMP' type='application/x-mplayer2' pluginspage='http://www.microsoft.com/Windows/MediaPlayer/' src='http://wpi64.s1009.xrea.com/media/xpwu.mpg' autostart='0' showcontrols='1' showstatusbar='1' loop='0' width='480' height='389'>
     </embed>
-
-</object>
+    </object>
+    </p>
     <hr>
     <li>
     Windwos Vista
