@@ -1,55 +1,86 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>N-MODEL ROOM</title>
-<meta charset="utf-8">
 <html lang="ja">
-		<meta name="keywords" content="xrea,,P-MODEL,ウィンドウズ,Windows">
-		<link rel="stylesheet" type="text/css" href="Untitled-1.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>N-MODEL ROOM</title>
+    <script src="javascript/jquery.min.js"></script>
+<script src="Untitled-3.js"></script>
+<link rel="stylesheet" type="text/css" href="Untitled-2.css">
 </head>
-<body bgcolor="black" text="#ffffff" link="white" vlink=#00ffff>
-	<p id="index">
-		N-MODEL ROOM
+<body bgcolor="#000033" vlink="#d2ffee">
+    <p id="font">
+    N-MODEL ROOM
+    </p>
+    <ul class="nav">
+        <li><a href="">Macintosh</a>
+        <ul>
+        <li><a href="mac.html">Macエミュ</a></li>
+        <li><a href="QuickTime.html">QuickTime動画保管庫</a></li>
+        </ul>
+            <li><a href="old_win.html">Windows</a>
+            <ul>
+                <li><a href="old_win.html">Windoows総合</a></li>
+          
+                <li><a href="nt4.0.html">Windows NT4.0</a></li>
+            
+            </ul>
+                <li><a href="">others</a>
+                <ul>
+                    <li><a href="procon2.html">procon</a></li>
+                <li><a href="diary.html">開発雑記</a></li>
+           
+            <li><a href="kankore.html">艦これ</a></li>
+            <li><a href="pc.html">PC遍歴</a></li>
+            
+           
+                </ul>
+                <li>
+                    <a href="">PC活用</a>  <!--ページに表示される部分-->
+                    <ul>
+                        
+                        <li><a href="tkp.html">ThinkPad</a></li>
+                        <li><a href="geocities.html">ジオシティーズ</a></li>
+                        <li><a href="favorite.html">お役立ちサイト</a></li>
+                        <li><a href="li.html">Linux</a></li>
+                        <li><a href="yhm.html">Yahoo!メール</a></li>
+                        <li><a href="netscape.html">ネスケ関連</a></li>
+                        <!--ul,/ulまでサブの入れ子-->
+                    </ul>
+            
+            </ul></li> 
+            <span class="blink">
+                <p id="f">
+                    Welcome!!
+        </p>
+        
+                </span>
+               <font color="white">CSS3/HTML5非対応のブラウザの方は<a href="index2.html">ここをクリック</a>    *     対応ブラウザもここで確認できます</font>
+                <!--ランダムに画像変化-->
+                <script type="text/javascript">
+                    var imglist = new Array("immac.gif", "extra.jpg", "cn.jpg","osx.jpg","31.jpg","osie.jpg","kan.jpg","doma.jpg","S_osx_10.68.jpg","picture/s-os91.jpg","picture/s-os92.jpg","picture/s-x101.jpg","picture/os7.jpg","picture/os9.gif","picture/os9ie.jpg","picture/kk.png","picture/mkgs.jpg");
+                    var selectnum = Math.floor(Math.random() * imglist.length);
+                    var output = "<center><img src=" + imglist[selectnum] + "></center>";
+                    document.write(output);
+                </script>
+                    <br>
+                    <CENTER><script language="JavaScript"><!--
+                        document.write("あなたのWebブラウザは<br>　" .fontcolor("white")+ navigator.userAgent.fontcolor("white") + "<br>です。<br>".fontcolor("white"));
+                        // --></script></CENTER>
+
+<center>
+<iframe src="info.html" width="40%" height="40%" border=20px frameorder=1 >
+</iframe>
+</center>
+
+<p id="since">
+    last update '20 3/22 since '19 5/15   
 </p>
-<font size=2 color="white">
-	<marquee>
-	続出するバグはLinuxの仕様であり、クリーンインストールこそ最良のメンテナンスである。
-</font></marquee>
-<br>
-<table border="2" align="center" >
-	<tr><td bgcolor="aqua"><font size="3" ><font color="black">コンテンツ</font></td></tr>
-</table>
-<table border="3" align="center">
-<tr>
-	<td bgcolor="green" >PC</td><td bgcolor="blue">Mac</td><td bgcolor="red">software</td><td bgcolor="yellow" ><font color="black">その他</font></td>
-</tr>
-<tr>
-<td><a href="old_win.html" target="blank">Windows</a></td><td><a href="mac.html" target="blank">Macエミュ</a></td><td><a href="netscape.html" target="blank">ネットスケープダウンロードリンク</a></td><td><a href="kankore.html" target="blank">こちら鹿屋市鹿屋基地前鎮守府</a></td>
-</tr>
-<tr><td><a href="tkp.html">ThinkPad</a><td></td><td>
-<a href="nt4.0.html" target="blank">NT4.0の技法</a></td><td><a href="procon2.html" target="blank">procon29まとめ</a></td></tr>
-<tr><td><td></td><td><a </td><a href="pc.html" target="blank">PCの紹介</a></td><td><a href="geocities.html" target="blank">ジオシティーズ</a></td></tr>
-<tr><td><a href="favorite.html" target="blank">お役立ちページ</a></td><td></td><td><a href="yhm.html" target="blank">Yahoo!メール</a></td><td><a href="diary.html" target="blank">コラム</a></td></td></td></td></tr>
-</table>
+<p id="since">
+    このサイトはChromium版Edgeで動作を確認しています。</p>
 
-<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=36277039&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=36277039&main=1" /></noscript>
-<font color="white">
-<center>このページはChromium Edgeでざっくり表示の確認をしています。</center>
-</font color="white">
-<center>
-	<blink>
-		<h3>last update '20 3/22</h3> since '19/5/15
-	</blink>
-</center>
-このサイトはWindows版Internet Explorer4以降,Mac OS9,OS X 10.1.5のIEでほとんどのコンテンツが表示されます。
-<br>
-<center>
-	<img src="picture/PoweredByMacOSX.gif">
-</center>
-
-<br>
-
-
+    
 
 </body>
 </html>
