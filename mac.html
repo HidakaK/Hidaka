@@ -405,34 +405,15 @@ OS9の正月三が日の起動画面
                           '_blank',
                           'menubar=0,width=768,height=616,top=100,left=100');">　　
 									</div>
-
+<li>SheepShaver</li>
+漢字Talkをインストール
+SheepShaverでディスクを作成し、Basilisk2でそのディスクで漢字Talkを「カスタムインストール」から、リスト一つ目のチェックボックス左の矢印をクリックし、<br>
+展開されるリストの一番下をクリックし、インストールする。その後インストールしたディスクをSheepShaverで起動させる。(起動時に0.1秒ぐらいWelcome To Macintoshが表示される)
 
        <br> <img src="picture/madeonamac.gif" >
     </div>
-    <object
-    name="QT" 
-    classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" 
-    width="160" height="120" 
-    codebase="http://www.apple.com/qtactivex/qtplugin.cab">
     
-    <param name="src" value="http://wpi64.s1009.xrea.com/media/IMG_6707.mov" /><!-- 絶対パス -->
-    <param name="qtsrc" value="http://wpi64.s1009.xrea.com/media/IMG_6707.mov" /><!-- 絶対パス -->
-    <param name="autoplay" value="false" /><!-- 自動再生 -->
-    <param name="controller" value="true" /><!-- コントロール表示 -->
-    
-    <!-- 自動再生（autostart="true"）、コントロール表示（controller="true"） -->
-    <embed 
-        name="QT" 
-        pluginspage="http://www.apple.co.kp/quicktime/download/" 
-        src="http://wpi64.s1009.xrea.com/media/20THMAC.mov"
-        qtsrc="http://wpi64.s1009.xrea.com/media/20THMAC.mov"
-        width="160" height="136" 
-        autoplay="false" 
-        controller="true"
-    ><!-- src属性・qtsrc属性共に絶対パス -->
-    </embed>
-    
-    </object>
+
     mojaveからcatalinaにアップデート後、Launchpadに全てのアプリが表示されないのを解決
     ターミナルでdefaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
     と入力
