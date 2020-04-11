@@ -65,11 +65,11 @@ footer address{
 }
 /*タイトルのプロパティ*/
 p#font{
-  color:#00ff00;
+  color:black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color:black;
   font-size: 200%;
   text-align: center;
+  opacity: 0.5;
 }
 
 p#since{
