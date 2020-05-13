@@ -1,8 +1,26 @@
 tle{
-    
-    font-size: x-large;
+    font-size:400%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+
+}
+
+body{
+    background-color:black;
+}
+main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    color: white;
+  
+}
+menu{
+
+    font-size: 200%;
+    color: gray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    background-color: aquamarine;
+main2{
+    font-size: large;
+    color: white;
 }
