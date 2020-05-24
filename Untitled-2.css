@@ -85,9 +85,10 @@ color: blanchedalmond;
 }
 @keyframes blinkAnime{
  0%  { color : yellow }  /* 33%ごとに色を入れ替え */
- 33% { color : blue   }
+ 20% { color : blue   }
  40%{color:orange}
- 66% { color : rgb(20, 248, 142)  }
+ 60% { color : rgb(20, 248, 142)  }
+ 80% {color:purple}
  100%{ color : rgb(255, 0, 0)    }
 }
 p#f{
