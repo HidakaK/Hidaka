@@ -1,8 +1,15 @@
+@font-face{
+    font-family: 'font0';
+    src:local('SegoeWP-Light.ttf');
+}
+tt{
+    font-family: 'font0';
+    font-size: 400%;
+}
 tle{
     font-size:400%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   color: white;
-
+    font-family: 'font0';
+ color: white;
 }
 
 body{
