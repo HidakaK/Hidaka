@@ -10,21 +10,22 @@
     <div aligin='center'>
         ここはMicrosoft全盛期(多分2000年代初頭?)のWindows関連のメモです<hr>
         <br>
+        <font color="red">*windows 2000のwindows updateはSHA-1廃止により実行できなくなりました SP+メーカーでHotfix専用CDを作成するといいです。</font>
         <table border="2">
             <tbody>
                 <tr>
-                    <th>Dynabook L20でWindows 2000をインストール</th><td>そもそも動くの? ... はい</td>
+                    <th>Dynabook L20にWindows 2000をインストール</th><td></td>
                 </tr>
                 <tr><th>手順</th><th>注意点</th></tr>
                 <tr><td>CDからWIndows 2000 をインストール</td><td> nlite等でService Pack 4をあらかじめ適用する(無印だと起動にかなり時間がかかるため)</td></tr>
       <tr><td>ドライバ</td><td>LAN,Sound,Graphicのドライバ</td></tr>
       <tr><td>LAN</td><td>dynabook ダウンロードページから型番を検索しrealtek gigabit ethernet family xp用ドライバの自己解凍式プログラムをダウンロードし、
         7-zipなどで解凍する、その中に2k用ドライバがあるのでそれをデバイスマネージャからインストール</td></tr>
-        <tr><td>Audio</td><td>kb888111を黒翼猫のコンピュータ日記 2nd Edition - Windows 2000 BlogからリンクしてあるWindows Legacy Updateというサイトからダウンロード </td></tr>
+        <tr><td>Audio</td><td>kb888111をhttp://win2k.org/wlu/wlu.htmからダウンロード </td></tr>
         <tr><td>＊再起動時にプラグアンドプレイでIntel HD Audioが自動的に認識される。<td>kb888111無しでオーディオを認識できない原因 https://www.tekwind.co.jp/ASU/faq/entry_28.php</td></tr>
           <tr><td>Video</td><td>ダウンロード先 http://blog.livedoor.jp/blackwingcat/archives/1143494.html<br></td></tr>
           <tr><td><td>このサイトからリンクされているインテルのサイトからzipをダウンロードしてsetup.exeを実行する</td></tr>
-          <tr><td>WindowsUpdateまでの手順</td><td>IE6,SP4 SRP v2,ルート証明書の更新の順でインストールする。　IE6以外はWindows legucy Updateというサイトからダウンロード</td></tr>
+          <tr><td>WindowsUpdateまでの手順</td><td>IE6,SP4 SRP v2,ルート証明書の更新の順でインストールする。　IE6以外はWindows legucy Updateからダウンロード(.wluはここのスクリプトでインストール<a href="http://win2k.org/cgi-bin/dl.cgi?file=wlupdate14.cab">wlupdate v1.4</a></td></tr>
           <tr><td>Windwos update</td><td>IEのtlsのチェックを外し、ssl2,3にチェックを入れると更新できる</td></tr>
 
     </table>
@@ -76,28 +77,11 @@ https://web.archive.org/web/20150205024831/http://www.visualstudio.com/ja-jp/dow
 
 太田研究室 > Visual C++ 2010 Express インストール メモ<br>
 http://cvwww.ee.ous.ac.jp/vc10inst.html<br>
-
-<hr>
-<ul>
-    QEMUでWindows NT 4.0
-</ul>
+Microsoft Web Expression
 <br>
-<table border="2">
-    <tbody>
-    <tr><td><img src="picture/ntm1.jpg" width="180" height="165"><img src="picture/ntm.jpg" width="370" height="288"></td></tr>
-    <tr><td><img src="picture/ntm2.jpg" width="470" height="360"><img src="picture/ntm3.jpg" width="260" height="235"></td></tr>
-    </tbody>
-</table>
-<br>
-
-参考サイト
-<br>
-<a href="http://computernewb.com/wiki/How_to_install_Windows_NT_on_MIPS_in_QEMU">QEMUのMIPSにWindows NTをインストールする方法-Computernewb Wiki</a>
-<br>
-<a href="http://7shi.hateblo.jp/entry/20100609/1276087586">QEMUでNT4/MIPS - 七誌の開発日記</a>
-
-
-
+Design_Trial_ja.exe
+Encoder_ja.exe
+Web_Trial_ja.exe
     </div>
     <hr>
     <li>
@@ -229,6 +213,15 @@ nliteでiso作成
 
     <hr>
 <a href="https://web.archive.org/web/20090629204228/http://www.microsoft.com/japan/windows/products/windowsxp/future.mspx">Windows XPのこれから</a>
+
+<br>
+Tips
+<br>
+
+    Netscape Navigator 9.0.0.6はXPだと最新版のFlash Playerが動作する。
+ちなみにOS X 10.6 Snow Leopardだと10.2.xが正常動作する最後のバージョンである。
+
+<img src="picture/flash.png">
     <li>
     Windwos Vista
     </li>
