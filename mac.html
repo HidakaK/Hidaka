@@ -412,7 +412,31 @@ OS9の正月三が日の起動画面
 SheepShaverでディスクを作成し、Basilisk2でそのディスクで漢字Talkを「カスタムインストール」から、リスト一つ目のチェックボックス左の矢印をクリックし、<br>
 展開されるリストの一番下をクリックし、インストールする。その後インストールしたディスクをSheepShaverで起動させる。(起動時に0.1秒ぐらいWelcome To Macintoshが表示される)
 
-       <br> <img src="picture/madeonamac.gif" >
+       <br>
+       <br>
+       Vmwareで夢を見る
+       <br>
+       <pre>
+        Vmwareを起動する前に
+        vmware mac os x用設定をアンロックするunluckier-で始まるファイルを入手　複数あるので適切なものを選ぶ
+        OS X Server 32bitを選択
+        この状態でdvd起動するとサーバー版ではないと怒られるのでefi..を仮想マシンのフォルダに移動
+        　efi32-srvr.rom or efi64-srvr.romを　Googleやbingで検索すれば入手可能
+        vmxを開く 最後の行にefi32.filename="efi32-srvr.rom"を追加
+        
+        そして仮想マシンを起動 winsowsntのようにインストール途中にhddをフォーマットできない(9xと同じ?) ので最初にディスクユーティリティでフォーマットしておく
+        
+        多分ここでunlockerが入手可能　未検証
+        https://www.insanelymac.com/forum/topic/303311-workstation-1112-player-712-fusion-78-and-esxi-6-mac-os-x-unlocker-2/
+        
+        unlockerやefiはここでもいけるかも
+        https://github.com/jas502n/Black-Apple-On-Vmware/tree/master/unlocker204
+        
+        後は画面の指示に沿ってインストールを進める
+        
+       </pre>
+       <br>
+       <img src="picture/madeonamac.gif" >
     </div>
     
 
