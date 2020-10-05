@@ -13,21 +13,21 @@ tle{
 }
 
 body{
-    background-color:black;
+    background-color:lightgreen;
 }
 main{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 200%;
-    color: white;
+    color: gray;
   
 }
 menu{
 
     font-size: 200%;
-    color: gray;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 main2{
     font-size: large;
-    color: white;
+    color: black;
 }
