@@ -65,7 +65,7 @@ footer address{
 }
 /*タイトルのプロパティ*/
 p#font{
-  color:black;
+  color:magenta;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 200%;
   text-align: center;

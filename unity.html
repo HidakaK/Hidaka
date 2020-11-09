@@ -1,24 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        @import url(un.css);
+        </style>
     <title>Unity開発奮闘記</title>
 </head>
-<body>
-    part1
+<body bgcolor="gray">
+    <li>
+        <big>
+              Unity開発奮闘記  
+        </big>
+    
+    </li>
     <br>
-    プロ生ちゃんを動貸したかった
+    Unityについてのメモ?を書き殴ります。
+<br>
+      
+    
+<tt>
+    part1
+</tt>
+  
+    <br><aud>
+         プロ生ちゃんを動かしたかった
+    </aud>
+   
+    <br>
     ここを見ればいけるはず<a href="http://fantom1x.blog130.fc2.com/blog-entry-234.html">【Unity】SDプロ生ちゃんを動かす！  </a>
-    どうもジャンプの挙動がしっくりこない　使うのを断念
+    <br>
+    しかしどうもジャンプの挙動がしっくりこない　使うのを断念<br>
+    <aud>
+動的にオブジェクトを生成
+    </aud>
 
+
+<br>
     シーン場にない状態で動的に生成するオブジェクトにそのオブジェクト固有のスクリプトをつけたいときはprefabを2改クリックし、ヒエラルキービューにC#ファイルをドラッグアンドドロップする
-
-    add componentでaudio sourceを追加したい　
-    簡単にコードの追加する
+<br>
+<aud>
+  add componentでaudio sourceを追加したい　
+</aud>
+  <pre>
+       コードの追加をする
     public AudioClip test;
     AudioSource.PlayClipAtPoint(test, transform.position);
     とする。
+  </pre>
+   
     参考サイトhttps://mono-pro.net/archives/4196
     
 </body>
