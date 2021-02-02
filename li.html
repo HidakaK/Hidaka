@@ -69,5 +69,12 @@ libgtk2.0-0:i386,libpangoxft-1.0-0:i386,libpangox-1.0-0:i386,libstdc++5:i386,lib
 <a href="https://seanos.id.au/en/riomhaireacht/ubuntu/2017-9-17-navigator">Installing Netscape Navigator on Ubuntu</a>
 <br>
 <a href="https://askubuntu.com/questions/1109393/cant-load-shared-library-libxt-so-6-although-it-can-be-located">games - can't load shared library libXt.so.6 - although it can be located - Ask Ubuntu</a>
+<br>CentOS7のブートメニューにWindowsを追加する。<br>ターミナルからsuと入力し、root権限を取得する。cd /etc/grub.d/とうち、vi 40_customとうつ。viが起動し、#行の下に<br>
+menuentry "Windows 7" {
+    set root=(hd0,1)
+    chainloader +1
+    }
+    escを押し、:wqと入力し、保存する。最後にgrub2-mkconfig -o /boot/grub2/grub.cfgと入力し rebootで再起動させる。
+ディレクトリを移動する。<br><a href="https://www.abten.net/2017/04/1323/">CentOS 7 と Windows とのデュアルブート環境の構築 | えび天サーバ ( abten server )</a><br><a href="https://dareneiri.github.io/Configuring-Grub-2-on-CentOS-7/">Configuring Grub 2 on CentOS 7 to Dual Boot with Windows 7 - A Stack of Notes</a><br>
 </body>
 </html>
