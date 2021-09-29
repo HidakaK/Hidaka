@@ -8,21 +8,6 @@
 <body>
     Mac Tips
     <br>
-    <center><img src="picture/macos.png"></center>
-    <li>cool retro term　インストール方法</li> 
-<li>macの場合</li>
-mac用のパッケージ管理ソフト brewを使うために
-<s>
-xcodeをappstoreからインストールする。　余談ですがところでxcode約8GBこのためだけに入れるのって... visualstudioみたいにコンポーネント単位で選べるようにならないのか
-</s>
-<br>
-xcode commandline tool単体でインストール
-<br>
-ターミナルで <code>xcode-select --install</code>と入力する。するとGUIのダイアログが表示されるので、"インストール”をクリック
-<br>インストール後は以下のサイト<a href="https://brew.sh/index_ja">https://brew.sh/index_ja</a>にアクセスし、インストールの下のスクリプトをターミナルに貼り付け、実行する。
-インストール後,<code>brew --version</code>と入力し、バージョン情報が表示されたら成功。その後<code>brew cask install cool-retro-term</code>と入力するとcool-retro-termがインストールされる。
-<li>
-    
     Adobe AIRをmacOS Catalinaにインストールする<br>
     ターミナルで<br><pre>
         cd /Library/Frameworks
@@ -31,9 +16,5 @@ ls -l@ ./Adobe/ AIR.framework/
     </pre>
     <br>
     その後macintosh hd/library/frameworks/adobe air framework/versions/1.0/adobe air application installer.appを実行する
-    <br>  mojaveからcatalinaにアップデート後、Launchpadに全てのアプリが表示されないのを解決
-    ターミナルでdefaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
-    と入力
-    アプリの順序がリセットされ、表示されていなかったアプリも2ページ目以降に表示される。
     <a href="https://web.archive.org/web/20071221061341/http://otosofts.hp.infoseek.co.jp/rippers&encoders.htm">リッパー＆エンコーダ</a>
 </html>
